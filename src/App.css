@@ -1,0 +1,302 @@
+.h-screen-center{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.card-from{
+  width: 100%;
+  max-width: 350px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.lock-icons{
+   display: flex;
+   justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+.lock-icons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lock-icons h1 {
+  font-size: 32px;
+  color: #171717; /* Setting color to a beautiful blue */
+  position: relative;
+  display: inline-block;
+  font-weight: 500px;
+  font-family: sans-serif;
+  font-size: 40px;
+  border-bottom: 2px solid rgb(12, 87, 153); /* Adding a line under the heading */
+  padding-bottom: 10px; /* Adjust the padding as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.lock-icons h1:before,
+.lock-icons h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+   background-color: rgb(12, 87, 153);/* Replace 'lock-icon.svg' with your lock icon image path */
+  
+}
+
+.lock-icons h1:before {
+  left: -40px;
+}
+
+.lock-icons h1:after {
+  right: -40px;
+}
+
+
+.form{
+  display: grid;
+  gap: 10px;
+}
+.form-element{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-element input {
+  width: 100%;
+  outline: none;
+  border:none;
+}
+
+.form-element .input-container{
+  border : 1px solid black;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.icons-password{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.form button{
+  padding: 9px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  border:none;
+  background-color: rgb(57, 57, 141);
+  color : white; 
+  letter-spacing: 1px;
+  margin : 7px auto;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.form button:hover{
+  background-color: rgb(49, 49, 122);
+  transform: scale(1.1);
+}
+.link{
+  text-decoration: none;
+}
+.link:hover{
+  text-decoration: underline;
+}
+.profile-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.05);
+  background-color: rgb(238, 230, 230);
+  margin:0 auto;
+  display: block;
+  position: relative;
+}
+.upload-pic-text{
+  position: absolute;
+  font-size: 12px;
+  height: 30px;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color:white;
+  cursor: pointer;
+}
+.sign-form-lock-container{
+  width: 83px;
+  height: 83px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 100px;
+  position: relative;
+}
+#upload-pic-input{
+  display: none;
+}
+
+
+/***user-profile****/
+.user-profile{
+  width: 100%;
+  max-width: 350px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  padding: 0px 0px 20px 10px;
+}
+.user-profile-icons{
+  width: 50px;
+  height: 50px;
+  padding:20px;
+  border : 2px solid rgb(49, 49, 122);
+  border-radius: 50px;
+  margin: auto;
+}
+.user-name{
+  text-transform: capitalize;
+  margin: 0;
+}
+.user-profile-pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+.user-email{
+  margin: 0;
+}
+
+.logout-btn{
+  border:2px solid transparent;
+  background-color: red;
+  color : white;
+  font-weight: 600;
+  padding: 3px 12px;
+  letter-spacing: 0.5px;
+  width: fit-content;
+  margin-left: auto;
+  display: block;
+  cursor: pointer;
+}
+.addButton{
+  text-decoration: none;
+  background-color: purple;
+  color: white;
+  font-weight: 500;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  padding: 10px;
+}
+/* add page */
+.addUser{
+  width: 25%;
+  background-color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.addUserForm {
+  margin-top: 20px;
+}
+
+.addUserForm .inputGroup{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addUserForm .inputGroup label{
+  margin-bottom: 5px;
+}
+
+.addUserForm .inputGroup input{
+  margin-bottom: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+.addUserForm .inputGroup button{
+  border: 0;
+  outline: none;
+  background-color: purple;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  margin-top: 20px;
+}
+
+.addUser h3{
+  margin-top: 10px;
+}
+.userTable{
+  width: 60%;
+  background-color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.addButton{
+ text-decoration: none;
+ background-color: purple;
+ color: white;
+ font-weight: 500;
+ box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+ border-radius: 5px;
+ padding: 10px;
+}
+
+.userTable table{
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+
+}
+
+.userTable table thead th{
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+}
+
+.userTable table tbody td{
+  padding: 10px;
+  text-align: center;
+}
+
+.actionButtons button{
+  border: 0;
+  outline: none;
+  background: red;
+  padding: 8px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actionButtons a{
+  background: green;
+  padding: 6px 10px;
+  color: white;
+  border-radius: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+}
